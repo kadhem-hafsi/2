@@ -1,0 +1,43 @@
+{
+  "publication": [
+    {
+      "like": 0,
+      "titre": "aaaa",
+      "description": "dddddddddddddd",
+      "id": 1
+    },
+    {
+      "like": 6,
+      "public": true,
+      "description": "fvzfv",
+      "titre": "zfvzf",
+      "id": 2
+    },
+    {
+      "like": 0,
+      "titre": "jkl",
+      "description": "hhhhhh",
+      "id": 3
+    },
+    {
+      "titre": "mk*k",
+      "like": 11,
+      "description": "gffggg",
+      "public": true,
+      "id": 4
+    },
+    {
+      "like": 0,
+      "titre": "ggg",
+      "description": "ggg",
+      "id": 5
+    },
+    {
+      "like": 1,
+      "titre": "fff",
+      "description": "jjj",
+      "public": true,
+      "id": 6
+    }
+  ]
+}

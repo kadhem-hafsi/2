@@ -1,0 +1,38 @@
+ 
+<div class="container">
+
+    <form>
+        <div class="form-group">
+        <input type="text" name="chercher" placeholder="chercher une publication" [(ngModel)]="chercher">
+        <button (click)="chercherStage()">chercher</button>
+        </div>
+    </form>
+
+    <table class="table" border ="2">
+        <tr>
+                <td>id</td>
+                <td>titre</td>
+                <td>description</td>
+                <td>public</td>
+                <td>NbrLike</td>
+                <td>action</td>
+                
+        </tr>
+        <tbody *ngFor="let p of listPub">
+            <tr *ngIf="p.public===true" >
+                <th>{{p.id}}</th>
+                <th>{{p.titre}}</th>
+                <th>{{p.description}}</th>
+                <th>{{p.public}}</th>
+                <th>{{p.like}}</th> 
+                <div>
+                    <button (click)="incrementer(p)">like</button>
+                    <button (click)="getElemt(p)">detail</button>
+                    
+                </div>
+    
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    

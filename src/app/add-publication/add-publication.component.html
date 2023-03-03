@@ -1,0 +1,27 @@
+
+<div class="container">
+    <form #f="ngForm">
+            <div>
+                <label >titre</label>
+                <input type="text" name="titre" required minlength="3" class="form-control"
+                [(ngModel)]="publication.titre" #n="ngModel">
+                    <div *ngIf="n.touched && n.invalid">
+                        <div *ngIf="n.errors?.['required']" >is required</div>
+                        <div *ngIf="n.errors?.['minlength']">min length is 3</div>
+                    </div>
+            </div>
+            <div>
+                <label>description</label>
+                <input type="text" name="description" class="form-control" 
+                [(ngModel)]="publication.description" #e="ngModel">
+            </div>
+            <div>
+                <label>public</label>
+                <input type="checkbox" name="public" [(ngModel)]="publication.public">
+            </div>
+            <div>
+                <input type="submit" value="ajouter" class="btn btn-success" 
+                (click)="ajouterPub()" [disabled]="f.invalid">
+            </div>
+    </form>
+    </div>
